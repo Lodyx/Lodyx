@@ -1,0 +1,22 @@
+{
+  "name": "heroku-gitlab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/samaronybarros/heroku-gitlab.git"
+  },
+  "author": "Sam Barros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/samaronybarros/heroku-gitlab/issues"
+  },
+  "homepage": "https://gitlab.com/samaronybarros/heroku-gitlab#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

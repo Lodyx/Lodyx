@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src='waxjs.js'></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <p style="color:#ef9d47" id="autologin"></p>
+
+    <!-- Navigation Container -->
+    <nav class="header-nav-container">
+        <button class="header-btn" id="header-btn-mine">MINE</button>
+        <button class="header-btn" id="header-btn-craft">CRAFT</button>
+        <button class="header-btn" id="header-btn-transmute">TRANSMUTE</button>
+        <button class="header-btn" id="header-btn-workshop">WORKSHOP</button>
+        <!-- <button class="header-tab" id="header-tab-etc">ETC</button> -->
+    </nav>
+
+    <div class="master-container">
+
+        <aside class="master-content">
+
+            <!-- Token List -->
+            <section class="token-list">
+                <div class="token-detail-container">
+
+                    <div class="token-detail-image-circle">
+                        <img src="../../../Finished Tools/magicite.png" alt="">
+                    </div>
+
+                    <div class="token-detail-resource-count">
+                        MANA: 1000
+                    </div>
+                </div>
+
+                <div class="token-detail-container">
+
+                    <div class="token-detail-image-circle">
+                        <img src="../../../Finished Tools/iron ingot.png" alt="">
+                    </div>
+
+                    <div class="token-detail-resource-count">
+                        ORES: 1000
+                    </div>
+                </div>
+
+                <div class="token-detail-container">
+
+                    <div class="token-detail-image-circle">
+                        <img src="../../../Finished Tools/mercury vial.png" alt="">
+                    </div>
+
+                    <div class="token-detail-resource-count">
+                        SPLY: 1000
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Material List -->
+            <section class="material-container">
+                <ul class="material-list">
+
+
+                </ul>
+
+            </section>
+
+        </aside>
+
+
+        <!-- MINING PAGE Starts Here-->
+        <!-- Container for Mining Page -->
+        <main class="page-content" id="page-content-mine">
+
+            <!-- LEFT SIDE OF THE MINING PAGE -->
+            <div class="tool-claim-details">
+
+                <div class="claim-related-btn">
+                    <button class="tool-claim-action-button" id="claim-btn">CLAIM</button>
+                </div>
+
+                <div id="claim-info-box">
+                    Claim Stored: 100 <br>
+                    Cost: 100 B / 20 C <br>
+                    Current Bonuses: <br>
+                    Material Chance: 10% <br>
+
+
+
+                </div>
+
+                <div class="equip-btns-box">
+                    <button class="tool-claim-action-button" id="equip-btn">EQUIP</button>
+                    <button class="tool-claim-action-button" id="remove-btn">REMOVE</button>
+
+                </div>
+
+
+
+            </div>
+
+            <!-- RIGHT Side of the Mining Page -->
+            <!-- Contains only the Tools -->
+            <!-- Container for the div of the tools -->
+            <div id="tool-box">
+
+                <!-- divs for the equipped Alchemist, Tomes, etc -->
+                <!-- clickable -->
+
+                <input type="radio" class="tool-box-btn" id="tool-box-equip-nft-id" name=" tool-box-radio"><label
+                    for="tool-box-equip-nft-id" class="tool-card-label equipped-nft tool-box-card"> <img
+                        src="/Images/lvl 1 alchemist ore.jpg" alt=""></label>
+
+                <div class="tool-card-label equipped-nft tool-box-card"></div>
+                <div class="tool-card-label equipped-nft tool-box-card"></div>
+                <div class="tool-card-label equipped-nft tool-box-card"></div>
+
+
+
+                <!-- divs for the equipped tools -->
+                <!-- clickable -->
+
+                <input type="radio" class="tool-box-btn" id="tool-box-equip-tool-id" name=" tool-box-radio">
+                <label for="tool-box-equip-tool-id" class="tool-card-label equipped-tool tool-box-card">
+                    <img src="/Images/lvl 1 Furnace.jpg" alt="">
+                </label>
+
+                <div class="tool-card-label equipped-tool tool-box-card"></div>
+                <div class="tool-card-label equipped-tool tool-box-card"></div>
+                <div class="tool-card-label equipped-tool tool-box-card"></div>
+                <div class="tool-card-label equipped-tool tool-box-card"></div>
+                <div class="tool-card-label equipped-tool tool-box-card"></div>
+                <div class="tool-card-label equipped-tool tool-box-card"></div>
+                <div class="tool-card-label equipped-tool tool-box-card"></div>
+
+
+                <!-- Inventory will be generated from Javascript -->
+
+                <div class="tool-card-label tool-box-card"></div>
+                <div class="tool-card-label tool-box-card"></div>
+                <div class="tool-card-label tool-box-card"></div>
+                <div class="tool-card-label tool-box-card"></div>
+                <div class="tool-card-label tool-box-card"></div>
+                <div class="tool-card-label tool-box-card"></div>
+                <div class="tool-card-label tool-box-card"></div>
+                <div class="tool-card-label tool-box-card"></div>
+
+
+
+
+            </div>
+
+        </main>
+
+        <!-- Container for Crafting Page -->
+        <main class="page-content" id="page-content-craft">
+            <div id="tool-craft-nft-container">
+                <nav id="tool-scroller-nav">
+                    <button class="tool-scroller-nav-btn" id="tool-scroller-nav-btn-base">BASE</button>
+                    <button class="tool-scroller-nav-btn" id="tool-scroller-nav-btn-upgrade">UPGRADE</button>
+                </nav>
+
+                <div class="tool-scroller-content" id="tool-scroller-content-base">
+
+                </div>
+
+                <div class="tool-scroller-content" id="tool-scroller-content-upgrade">
+
+                </div>
+
+
+
+            </div>
+
+            <div id="tool-craft-container">
+                <div class="tool-craft-card" id="tool-pic"></div>
+                <button id="craft-asset-btn">CRAFT</button>
+            </div>
+
+            <!-- Requirements for Crafting -->
+            <div id="tool-craft-requirements">
+
+                <!-- Top part -->
+                <div class="tool-require-inner-container">
+
+                    <!-- Tool Requirement -->
+                    <div class="craft-require-block" id="craft-require-tool">
+
+                        <div class="craft-require-title"> TOOL
+
+                        </div>
+
+                        <div class="craft-require-item">
+
+                        </div>
+                    </div>
+
+                    <!-- Token Requirement -->
+                    <div class="craft-require-block" id="craft-require-tokens">
+
+                        <div class="craft-require-title"> TOKENS
+
+                        </div>
+
+                        <div class="craft-require-item">
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Bottom Part -->
+                <div class="tool-require-inner-container">
+                    <!-- Material Requirements -->
+                    <div class="craft-require-block" id="craft-require-material">
+
+                        <div class="craft-require-title"> MATERIALS </div>
+
+                        <div class="craft-require-item">
+
+                        </div>
+                        <div class="craft-require-item">
+
+                        </div>
+                        <div class="craft-require-item">
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+
+
+
+        <!-- Container for the Transmute/GACHA Page -->
+        <!--  -->
+        <main class="page-content" id="page-content-transmute">
+
+            <!-- LEFT SIDE NAV BAR -->
+            <!-- Buttons for NAV BAR -->
+            <nav class="gacha-nav-bar">
+                <button class="gacha-nav-tab" id="basic-gacha-btn">BASIC</button>
+                <button class="gacha-nav-tab" id="advanced-gacha-btn">ADVANCED</button>
+                <button class="gacha-nav-tab" id="master-gacha-btn">MASTER</button>
+            </nav>
+
+            <!-- Content of NAV BAR -->
+            <main>
+                <!-- BASIC TAB CONTENT -->
+
+                <section class="gacha-tab-content" id="gacha-tab-content-basic">
+                    <section class="gacha-main-body">
+                        <div class="gacha-tab-artwork">
+                            <img src=""></img>
+
+                        </div>
+
+                        <div class="gacha-tab-tooltip">
+                            <span>CHANCES</span>
+                            <ul id="gacha-tab-tooltip-chance-info">
+                                <li>Material 80%</li>
+                                <li>Tomes 10%</li>
+                                <li>Tool 4%</li>
+                                <li>Alchemist 1%</li>
+                            </ul>
+                        </div>
+
+                    </section>
+
+                    <!-- Gacha Button Container -->
+                    <footer id="gacha-btn-container">
+                        <span class="gacha-btn-padding">
+
+                        </span>
+
+                        <!-- x1 Gacha Button -->
+                        <span class="gacha-btn-container-sub">
+                            <button class="gacha-btn" id="gacha-btn-basic-1">
+                                <span class="gacha-resource-cost-info">
+                                    <div>
+                                        <img src="." alt="">
+                                        100
+                                    </div>
+                                    <div>
+                                        <img src="" alt=""> 100
+                                    </div>
+                                    <div>
+                                        <img src="" alt="">
+                                        100
+                                    </div>
+
+                                </span>
+                            </button>
+                        </span>
+
+                        <!-- x10 Gacha Button -->
+                        <span class="gacha-btn-container-sub">
+                            <button class="gacha-btn" id="gacha-btn-basic-10">
+                                <span class="gacha-resource-cost-info">
+                                    <div>
+                                        <img src="../../../Finished Tools/magicite.png" alt="">
+                                        100
+                                    </div>
+
+                                    <div>
+                                        <img src="../../../Finished Tools/magicite.png" alt=""> 100
+                                    </div>
+
+                                    <div>
+                                        <img src="../../../Finished Tools/magicite.png" alt="">
+                                        100
+                                    </div>
+
+
+                                </span>
+                            </button>
+                        </span>
+
+                    </footer>
+
+                </section>
+
+                <!-- ADVANCED TAB CONTENT -->
+                <section class="gacha-tab-content" id="gacha-tab-content-advanced"></section>
+
+
+                <!-- MASTER TAB CONTENT -->
+                <section class="gacha-tab-content" id="gacha-tab-content-master"></section>
+            </main>
+
+
+        </main>
+        <!-- -------- -->
+        <!-- WORKSHOP -->
+        <!-- -------- -->
+        <main class="page-content" id="page-content-workshop">
+
+
+
+        </main>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{
+    "tools": [
+        {
+            "mint_number": 1,
+            "nft_template_id": 123456788,
+            "img_url": "https://static.wikia.nocookie.net/harrypotter/images/f/ff/Pholosophers-Stone_PM.jpg/revision/latest/scale-to-width-down/350?cb=20161122143651",
+            "name": "Philospher's Stone",
+            "rarity": "Mythic"
+        },
+        {
+            "mint_number": 2,
+            "nft_template_id": 123456789,
+            "img_url": "no-url",
+            "name": "Ruby",
+            "rarity": "Common"
+        }
+    ]
+}
